@@ -1,6 +1,7 @@
 /**
  * @author Luiza
  * @version 1.00 2016/8/14
+ * Special Pythagorean triplet
  */
 import java.io.*;
 import java.util.*;
