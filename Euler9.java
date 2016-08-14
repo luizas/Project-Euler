@@ -19,8 +19,8 @@ public class Euler9 {
         {
           int p=sc.nextInt();
           int sz=-1;
-          il:for(int a=1;a<12;a++)
-               {for(int b=1;b<12;b++)
+          il:for(int a=1;a<p;a++)
+               {for(int b=1;b<p;b++)
                {
                          if(a+b+(p-(a+b))==p&&(p-(a+b))>0){
                            if(a*a+b*b==(p-(a+b))*(p-(a+b))||a*a+(p-(a+b))*(p-(a+b))==b*b||b*b+(p-(a+b))*(p-(a+b))==a*a){sz=a*b*(p-(a+b));break il;}
