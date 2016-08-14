@@ -18,16 +18,15 @@ public class Euler9 {
     for (int i=0;i<ile;i++)
         {
           int p=sc.nextInt();
-          int sz=0;
+          int sz=-1;
           il:for(int a=1;a<12;a++)
                {for(int b=1;b<12;b++)
                {
-                   for(int c=1;c<12;c++)
-                       {  if(a+b+c==p){
-                           if(a*a+b*b==c*c||a*a+c*c==b*b||b*b+c*c==a*a){sz=a*b*c;break il;}
-                             else {sz=-1;}
+                         if(a+b+(p-(a+b))==p&&(p-(a+b))>0){
+                           if(a*a+b*b==(p-(a+b))*(p-(a+b))||a*a+(p-(a+b))*(p-(a+b))==b*b||b*b+(p-(a+b))*(p-(a+b))==a*a){sz=a*b*(p-(a+b));break il;}
                              
-                       }}}}
+                             
+                       }}}
        System.out.println(sz);
     }
 }
